@@ -42,9 +42,9 @@ tells you how to remediate them.
 
 ## How to Run
 
-Tool names are prefixed by Hermes: `mcp__agent_plugin_snyk_<hash>__sn__<tool>` (list them with
-`tool_search` for "snyk" if the exact prefix is unknown; the suffix after `__sn__` is the Snyk
-tool name used below).
+Tool names are prefixed by Hermes: `mcp__agent_plugin_snyk_8cb0f11d__sn__<tool>` when installed
+from the catalog (the hash derives from the install directory name; `tool_search` for "snyk"
+finds them either way). The suffix after `__sn__` is the Snyk tool name used below.
 
 1. `snyk_auth` once per machine (or when any scan reports "not authenticated"). Tell the user a
    browser window opens; wait for it to complete.

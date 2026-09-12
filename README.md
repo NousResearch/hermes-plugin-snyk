@@ -22,7 +22,9 @@ hermes plugins install snyk       # from the Nous plugin catalog
 hermes plugins enable snyk
 ```
 
-Then start a new Hermes session. Node.js/npm must be on `PATH` (the server is
+Then start a new Hermes session. The skill is available as
+`agent-plugin-snyk-8cb0f11d:snyk-security-scan` via `skill_view` (`skills_list`
+shows the exact name). Node.js/npm must be on `PATH` (the server is
 launched with `npx -y snyk@1.1306.0 mcp -t stdio --profile full`). The first
 launch downloads the pinned CLI.
 
@@ -47,7 +49,8 @@ EOF
 `snyk_breakability_check`, `snyk_auth`, `snyk_trust`, `snyk_logout`,
 `snyk_version`, `snyk_send_feedback`.
 
-Hermes exposes them as `mcp__agent_plugin_snyk_<hash>__sn__<tool>`. The
+Hermes exposes them as `mcp__agent_plugin_snyk_8cb0f11d__sn__<tool>` (the hash
+is derived from the install directory name `snyk`). The
 server key is `sn` rather than `snyk` because the longest tool name
 (`snyk_package_health_check`) lands exactly on the 64-character function-name
 cap of OpenAI-compatible wire formats with a `snyk` key; `sn` keeps every
