@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "sn": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "snyk@1.1306.0",
+        "mcp",
+        "-t",
+        "stdio",
+        "--profile",
+        "full",
+        "--DISABLE_ANALYTICS"
+      ],
+      "env": {
+        "SNYK_DISABLE_ANALYTICS": "1"
+      }
+    }
+  }
+}

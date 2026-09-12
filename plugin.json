@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "snyk",
+  "version": "1.0.0",
+  "description": "Scan code, dependencies, containers and IaC with Snyk's first-party MCP server (shipped inside the pinned Snyk CLI), with the snyk-security-scan workflow skill bundled.",
+  "author": {
+    "name": "Nous Research",
+    "url": "https://github.com/NousResearch"
+  },
+  "homepage": "https://github.com/NousResearch/hermes-plugin-snyk",
+  "repository": "https://github.com/NousResearch/hermes-plugin-snyk",
+  "license": "MIT",
+  "keywords": [
+    "snyk",
+    "security",
+    "sast",
+    "sca",
+    "dependencies",
+    "vulnerabilities",
+    "container",
+    "iac",
+    "sbom",
+    "mcp"
+  ]
+}
